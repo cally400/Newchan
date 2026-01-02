@@ -235,7 +235,7 @@ def handle_back_main(call):
 # =========================
 @bot.callback_query_handler(func=lambda c: c.data == "ichancy_create")
 def handle_ichancy_create(call):
-    ichancy_create.start_create_account(bot, call)
+    ichancy_create.start_create_account(bot, call, api)
 
 # =========================
 # تشغيل Webhook
